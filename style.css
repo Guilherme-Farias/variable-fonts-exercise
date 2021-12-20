@@ -1,12 +1,25 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family:'Raleway',  sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
   --color-gray-100: hsl(270deg 25% 96%);
   --color-gray-300: hsl(270deg 17% 84%);
   --color-gray-500: hsl(270deg 17% 72%);
   --color-gray-700: hsl(270deg 12% 58%);
   --color-gray-900: hsl(270deg 22% 12%);
   --color-gray-1000: hsl(270deg 20% 8%);
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
 }
 
 html,
@@ -43,10 +56,23 @@ footer {
 .logo {
   font-size: 2rem;
   margin-bottom: 16px;
+  font-weight: var(--font-weight-black);
+}
+
+.sublogo {
+  font-weight: var(--font-weight-medium);
+  font-style: italic;
+  color: var(--color-gray-500);
+}
+
+.person-name {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-300);
 }
 
 .legal {
   margin-top: auto;
+  color: var(--color-gray-700);
 }
 
 .links {
@@ -58,6 +84,8 @@ footer {
   margin-bottom: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-700);
 }
 
 .links li {
@@ -70,6 +98,8 @@ footer {
 
 .links a {
   text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-100);
 }
 
 main {
